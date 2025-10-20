@@ -1,0 +1,47 @@
+name: Validate Repository Structure
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate project folders and files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify docs folder exists
+        run: |
+          if [ ! -d "docs" ]; then
+            echo "Ошибка Папка 'docs' не найдена в корне репозитория"
+            exit 1
+          else
+            echo "Папка 'docs' найдена"
+          fi
+
+      - name: Verify content folder exists
+        run: |
+          if [ ! -d "content" ]; then
+            echo "Ошибка Папка 'content' не найдена в корне репозитория"
+            exit 1
+          else
+            echo "Папка 'content' найдена"
+          fi
+
+      - name: Verify README.md exists
+        run: |
+          if [ ! -f "README.md" ]; then
+            echo "Ошибка Файл 'README.md' не найден в корне репозитория"
+            exit 1
+          else
+            echo "Файл 'README.md' найден"
+          fi
+
+      - name: Summary
+        run: echo "Все обязательные файлы и папки присутствуют"
