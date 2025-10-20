@@ -44,7 +44,8 @@
 │
 ├── content/
 │ ├── questionnaire.md - анкета для заказчика
-│ ├── interview.docx - протокол интервью
+│ ├── questionnaire.pdf - анкета для заказчика в итоговом формате 
+│ ├── interview.pdf - протокол интервью
 │ └── communication-plan.pdf - план коммуникаций
 │
 ├── README.md
