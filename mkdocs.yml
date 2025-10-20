@@ -2,8 +2,6 @@ site_name: Документация репозитория команды Гар
 site_url: https://harmony249.github.io/project-hse
 theme:
   name: material
-nav:
-  - Home: index.md
 
 repo_name: harmony249/project-hse
 repo_url: https://github.com/harmony249/project-hse
@@ -25,6 +23,7 @@ theme:
 
 nav:
   - Главная: index.md
+  - Настройки CI/CD: index.md
 
 markdown_extensions:
   - toc:
