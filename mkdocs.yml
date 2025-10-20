@@ -4,3 +4,12 @@ site_description: Внутренняя документация команды �
 
 docs_dir: docs
 site_dir: site
+
+theme:
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+
+nav:
+  - Инструкция: index.md
+  - CI/CD: ci-cd.md
