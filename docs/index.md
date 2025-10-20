@@ -44,7 +44,7 @@
 │
 ├── content/
 │ ├── questionnaire.md - анкета для заказчика
-│ ├── interview.md - протокол интервью
+│ ├── interview.pdf - протокол интервью
 │ └── communication-plan.md - план коммуникаций
 │
 ├── README.md
