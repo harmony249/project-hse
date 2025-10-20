@@ -12,5 +12,5 @@ theme:
     - navigation.instant.prefetch
 
 nav:
-  - Инструкция: index.md
-  - CI/CD: ci-cd.md
+  - Инструкция: 'index.md'
+  - CI/CD: 'ci-cd.md'
