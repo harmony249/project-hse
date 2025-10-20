@@ -1,9 +1,7 @@
 site_name: Документация репозитория команды Гармония
 site_url: https://harmony249.github.io/project-hse
-theme:
-  name: material
-nav:
-  - Home: index.md
+site_description: Внутренняя документация команды Гармония (HSE Project)
+site_author: Команда Harmony249
 
 repo_name: harmony249/project-hse
 repo_url: https://github.com/harmony249/project-hse
@@ -20,34 +18,53 @@ theme:
     - navigation.instant
     - navigation.top
     - content.code.copy
+    - content.action.edit
+    - content.action.view
     - search.suggest
     - search.highlight
 
 nav:
   - Главная: index.md
+  - Настройки CI/CD: ci-cd.md
 
 markdown_extensions:
-  - toc:
-      permalink: true
-  - tables
   - admonition
   - attr_list
   - def_list
   - footnotes
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tabbed
+  - meta
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
 
-plugins:
-  - search
-  - autoreload
-  - minify:
-      minify_html: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/harmony249/project-hse
+      name: GitHub
 
 docs_dir: docs
 site_dir: site
