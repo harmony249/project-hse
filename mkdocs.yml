@@ -1,3 +1,7 @@
 site_name: Документация репозитория команды Гармония
 site_url: https://harmony249.github.io/project-hse
 site_dir: public
+theme:
+  name: material
+nav:
+  - Home: index.md
